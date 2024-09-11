@@ -1,0 +1,18 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.66.0"
+    }
+  }
+}
+
+
+provider "aws" {
+  # Configuration options
+  #Generally we have to give authentication info here, but if we do so and push it into github then myaccess key and secret key will be 
+  #displayed /will become public which will be problem ,so  we're using aws configure cmnd in command line(in git bash/win command prompt)
+ 
+  region="us-east-1"
+
+}
